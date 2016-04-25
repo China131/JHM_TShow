@@ -1,0 +1,41 @@
+//
+//  MeituCattAttribute Header.h
+//  MeituBlueToothDemo
+//
+//  Created by ph on 15/1/26.
+//  Copyright (c) 2015年 mtt0123. All rights reserved.
+//
+
+// 美图蓝牙遥控
+//
+///**
+// * This class includes a small subset of standard GATT attributes for demonstration purposes.
+// */
+//private static HashMap<String, String> attributes = new HashMap();
+//public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
+//public static String PHOTO_AUTODYNE_SERVICE = "e7868edb-99b6-462b-806f-07cac90065c9";
+//public static String BATTERY_SERVICE = "0000180f-0000-1000-8000-00805f9b34fb";
+//public final static String BATTERY_CHARACTERISTIC = "00002a19-0000-1000-8000-00805f9b34fb";
+//public final static String PHOTO_CHARACTERISTIC = "f4f05cad-4a04-4316-a287-4e45336aa28f";
+//
+//static {
+//    // Sample Services.
+//    attributes.put("0000180d-0000-1000-8000-00805f9b34fb", "Heart Rate Service");
+//    attributes.put("0000180a-0000-1000-8000-00805f9b34fb", "Device Information Service");
+//    attributes.put("0000180f-0000-1000-8000-00805f9b34fb", "Battery Service");
+//    attributes.put("00001800-0000-1000-8000-00805f9b34fb", "Generic Access");
+//    attributes.put("00001801-0000-1000-8000-00805f9b34fb", "Generic Attribute");
+//    attributes.put("00001802-0000-1000-8000-00805f9b34fb", "Immediate Alert");
+//    attributes.put("00001803-0000-1000-8000-00805f9b34fb", "Link Loss");
+//    attributes.put("00001804-0000-1000-8000-00805f9b34fb", "Tx Power");
+//    // Sample Characteristics.
+//    attributes.put("0000ffe1-0000-1000-8000-00805f9b34fb", "Heart Rate Measurement");
+//    attributes.put("00002a29-0000-1000-8000-00805f9b34fb", "Manufacturer Name String");
+//    attributes.put("00002a19-0000-1000-8000-00805f9b34fb", "Battery Level");
+//    attributes.put("f4f05cad-4a04-4316-a287-4e45336aa28f","Photo Order");
+//}
+//
+//public String lookup(String uuid, String defaultName) {
+//    String name = attributes.get(uuid);
+//    return name == null ? defaultName : name;
+//}

@@ -1,0 +1,16 @@
+//
+//  M_TShowShow_PCH.pch
+//  M_TShowShow
+//
+//  Created by cjatech-简豪 on 16/4/21.
+//  Copyright © 2016年 JH. All rights reserved.
+//
+
+#ifndef M_TShowShow_PCH_pch
+#define M_TShowShow_PCH_pch
+#import "Masonry.h"
+#define k_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define k_SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
+
+
+#endif /* M_TShowShow_PCH_pch */
