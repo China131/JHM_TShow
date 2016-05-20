@@ -1776,6 +1776,17 @@
 		AA1ACA081CC8B2B700BA7B88 /* yinhe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA1AC32B1CC8B2B700BA7B88 /* yinhe.jpg */; };
 		AA1ACA141CC8B36D00BA7B88 /* JHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1ACA131CC8B36D00BA7B88 /* JHBaseViewController.m */; };
 		AA1ACA171CC8B54C00BA7B88 /* JHMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1ACA161CC8B54C00BA7B88 /* JHMainViewController.m */; };
+		AA2CC5E11CE057FF00B1551A /* PhotoCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2CC5DF1CE057FF00B1551A /* PhotoCollectionItem.m */; };
+		AA2CC5E21CE057FF00B1551A /* PhotoCollectionItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA2CC5E01CE057FF00B1551A /* PhotoCollectionItem.xib */; };
+		AA2CC5E41CE059F500B1551A /* 扩大.png in Resources */ = {isa = PBXBuildFile; fileRef = AA2CC5E31CE059F500B1551A /* 扩大.png */; };
+		AA2CC5E71CE0660000B1551A /* JHBeautifyPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2CC5E61CE0660000B1551A /* JHBeautifyPhotoController.m */; };
+		AA2CC5EA1CE06B2700B1551A /* JHShowPhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA2CC5E91CE06B2700B1551A /* JHShowPhotoController.m */; };
+		AA441C401CE1A9AB0056993D /* JHPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA441C3F1CE1A9AB0056993D /* JHPhotoModel.m */; };
+		AA441C441CE1B2490056993D /* JHPhotoShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA441C421CE1B2490056993D /* JHPhotoShowCell.m */; };
+		AA441C451CE1B2490056993D /* JHPhotoShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA441C431CE1B2490056993D /* JHPhotoShowCell.xib */; };
+		AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6014D61CDC8FA70065EBF1 /* JHAlumShowCell.m */; };
+		AA6014D91CDC8FA70065EBF1 /* JHAlumShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6014D71CDC8FA70065EBF1 /* JHAlumShowCell.xib */; };
+		AA6014DC1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */; };
 		AAA363A61CC8C4150010D876 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA3638C1CC8C4150010D876 /* Info.plist */; };
 		AAA363A71CC8C4150010D876 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3638E1CC8C4150010D876 /* MASCompositeConstraint.m */; };
 		AAA363A81CC8C4150010D876 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363911CC8C4150010D876 /* MASConstraint.m */; };
@@ -3587,6 +3598,24 @@
 		AA1ACA131CC8B36D00BA7B88 /* JHBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBaseViewController.m; sourceTree = "<group>"; };
 		AA1ACA151CC8B54C00BA7B88 /* JHMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMainViewController.h; sourceTree = "<group>"; };
 		AA1ACA161CC8B54C00BA7B88 /* JHMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMainViewController.m; sourceTree = "<group>"; };
+		AA2CC5DE1CE057FF00B1551A /* PhotoCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionItem.h; sourceTree = "<group>"; };
+		AA2CC5DF1CE057FF00B1551A /* PhotoCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionItem.m; sourceTree = "<group>"; };
+		AA2CC5E01CE057FF00B1551A /* PhotoCollectionItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionItem.xib; sourceTree = "<group>"; };
+		AA2CC5E31CE059F500B1551A /* 扩大.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "扩大.png"; sourceTree = "<group>"; };
+		AA2CC5E51CE0660000B1551A /* JHBeautifyPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBeautifyPhotoController.h; sourceTree = "<group>"; };
+		AA2CC5E61CE0660000B1551A /* JHBeautifyPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBeautifyPhotoController.m; sourceTree = "<group>"; };
+		AA2CC5E81CE06B2700B1551A /* JHShowPhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHShowPhotoController.h; sourceTree = "<group>"; };
+		AA2CC5E91CE06B2700B1551A /* JHShowPhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHShowPhotoController.m; sourceTree = "<group>"; };
+		AA441C3E1CE1A9AB0056993D /* JHPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPhotoModel.h; sourceTree = "<group>"; };
+		AA441C3F1CE1A9AB0056993D /* JHPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPhotoModel.m; sourceTree = "<group>"; };
+		AA441C411CE1B2490056993D /* JHPhotoShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPhotoShowCell.h; sourceTree = "<group>"; };
+		AA441C421CE1B2490056993D /* JHPhotoShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPhotoShowCell.m; sourceTree = "<group>"; };
+		AA441C431CE1B2490056993D /* JHPhotoShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHPhotoShowCell.xib; sourceTree = "<group>"; };
+		AA6014D51CDC8FA70065EBF1 /* JHAlumShowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAlumShowCell.h; sourceTree = "<group>"; };
+		AA6014D61CDC8FA70065EBF1 /* JHAlumShowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAlumShowCell.m; sourceTree = "<group>"; };
+		AA6014D71CDC8FA70065EBF1 /* JHAlumShowCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JHAlumShowCell.xib; sourceTree = "<group>"; };
+		AA6014DA1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAlumPhotoShowController.h; sourceTree = "<group>"; };
+		AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAlumPhotoShowController.m; sourceTree = "<group>"; };
 		AAA363891CC8C0520010D876 /* M_TShowShow_PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M_TShowShow_PCH.pch; sourceTree = "<group>"; };
 		AAA3638C1CC8C4150010D876 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA3638D1CC8C4150010D876 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
@@ -3663,6 +3692,12 @@
 			children = (
 				AA11DE251CCA197500279F1E /* JHAlbumSelectController.h */,
 				AA11DE261CCA197500279F1E /* JHAlbumSelectController.m */,
+				AA6014DA1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.h */,
+				AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */,
+				AA2CC5E51CE0660000B1551A /* JHBeautifyPhotoController.h */,
+				AA2CC5E61CE0660000B1551A /* JHBeautifyPhotoController.m */,
+				AA2CC5E81CE06B2700B1551A /* JHShowPhotoController.h */,
+				AA2CC5E91CE06B2700B1551A /* JHShowPhotoController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -3670,6 +3705,8 @@
 		AA11DE231CCA192F00279F1E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA441C3E1CE1A9AB0056993D /* JHPhotoModel.h */,
+				AA441C3F1CE1A9AB0056993D /* JHPhotoModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -3677,6 +3714,15 @@
 		AA11DE241CCA192F00279F1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA6014D51CDC8FA70065EBF1 /* JHAlumShowCell.h */,
+				AA6014D61CDC8FA70065EBF1 /* JHAlumShowCell.m */,
+				AA6014D71CDC8FA70065EBF1 /* JHAlumShowCell.xib */,
+				AA2CC5DE1CE057FF00B1551A /* PhotoCollectionItem.h */,
+				AA2CC5DF1CE057FF00B1551A /* PhotoCollectionItem.m */,
+				AA2CC5E01CE057FF00B1551A /* PhotoCollectionItem.xib */,
+				AA441C411CE1B2490056993D /* JHPhotoShowCell.h */,
+				AA441C421CE1B2490056993D /* JHPhotoShowCell.m */,
+				AA441C431CE1B2490056993D /* JHPhotoShowCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -3777,6 +3823,7 @@
 		AA1ABC471CC8B2A800BA7B88 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				AA2CC5E31CE059F500B1551A /* 扩大.png */,
 				AA11DE1D1CC9C03A00279F1E /* Main */,
 				AA1ABC481CC8B2A800BA7B88 /* 001.jpg */,
 				AA1ABC491CC8B2A800BA7B88 /* 002.jpg */,
@@ -5886,6 +5933,7 @@
 				AA1AC99D1CC8B2B700BA7B88 /* text_font_thumbnail3_b@2x.png in Resources */,
 				AA1AC3B51CC8B2B700BA7B88 /* btn_blueTooth_buy_b@2x.png in Resources */,
 				AA1AC6F71CC8B2B700BA7B88 /* icon_function_text_b@3x.png in Resources */,
+				AA2CC5E21CE057FF00B1551A /* PhotoCollectionItem.xib in Resources */,
 				AA1AC5391CC8B2B700BA7B88 /* filter_figure_113@3x.jpg in Resources */,
 				AA1AC9BA1CC8B2B700BA7B88 /* thumbImage_camera_zoomSlider@3x.png in Resources */,
 				AA1AC7771CC8B2B700BA7B88 /* img_camera_select_a@3x.png in Resources */,
@@ -6205,6 +6253,7 @@
 				AA1AC9C11CC8B2B700BA7B88 /* 04A.png in Resources */,
 				AA1AC9F51CC8B2B700BA7B88 /* welcome_text_03@2x.png in Resources */,
 				AA1AC4FE1CC8B2B700BA7B88 /* face84@2x.png in Resources */,
+				AA441C451CE1B2490056993D /* JHPhotoShowCell.xib in Resources */,
 				AA1AC44A1CC8B2B700BA7B88 /* camera_torch_on_b@2x.png in Resources */,
 				AA1AC5161CC8B2B700BA7B88 /* filter_cate_167@2x.jpg in Resources */,
 				AA1AC9101CC8B2B700BA7B88 /* template007-10@3x.jpg in Resources */,
@@ -7002,6 +7051,7 @@
 				AA1AC5891CC8B2B700BA7B88 /* filter_still_174@3x.jpg in Resources */,
 				AA1AC9B01CC8B2B700BA7B88 /* text_font_thumbnail8@3x.png in Resources */,
 				AA1AC8FB1CC8B2B700BA7B88 /* template006-11@2x.jpg in Resources */,
+				AA2CC5E41CE059F500B1551A /* 扩大.png in Resources */,
 				AA1AC61B1CC8B2B700BA7B88 /* icon_blur_null@3x.png in Resources */,
 				AA1AC77B1CC8B2B700BA7B88 /* keyboard_press.png in Resources */,
 				AA1AC78F1CC8B2B700BA7B88 /* magic_brush_02@2x.png in Resources */,
@@ -7109,6 +7159,7 @@
 				AA1AC8141CC8B2B700BA7B88 /* StickerInfo.xml in Resources */,
 				AA1AC3C61CC8B2B700BA7B88 /* btn_blueTooth_reconnect_a@3x.png in Resources */,
 				AA1AC7BE1CC8B2B700BA7B88 /* mini_icon_line@2x.png in Resources */,
+				AA6014D91CDC8FA70065EBF1 /* JHAlumShowCell.xib in Resources */,
 				AA1AC9561CC8B2B700BA7B88 /* text_font_thumbnail12@3x.png in Resources */,
 				AA1AC7E51CC8B2B700BA7B88 /* mosaic_style_13@2x.jpg in Resources */,
 				AA1AC6A51CC8B2B700BA7B88 /* icon_cosmesis_masara_b@3x.png in Resources */,
@@ -7604,12 +7655,19 @@
 				AAA363AC1CC8C4150010D876 /* MASViewConstraint.m in Sources */,
 				AA1ABC131CC8B20B00BA7B88 /* AppDelegate.m in Sources */,
 				AA1ACA141CC8B36D00BA7B88 /* JHBaseViewController.m in Sources */,
+				AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */,
 				AA1ABC1C1CC8B20C00BA7B88 /* M_TShowShow.xcdatamodeld in Sources */,
 				AA11DE201CC9F45A00279F1E /* JHCustomerMainButton.m in Sources */,
 				AAA363AF1CC8C4150010D876 /* View+MASAdditions.m in Sources */,
+				AA441C441CE1B2490056993D /* JHPhotoShowCell.m in Sources */,
+				AA6014DC1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m in Sources */,
+				AA2CC5E71CE0660000B1551A /* JHBeautifyPhotoController.m in Sources */,
 				AAA363A71CC8C4150010D876 /* MASCompositeConstraint.m in Sources */,
 				AAA363AB1CC8C4150010D876 /* MASViewAttribute.m in Sources */,
+				AA2CC5EA1CE06B2700B1551A /* JHShowPhotoController.m in Sources */,
 				AA11DE271CCA197500279F1E /* JHAlbumSelectController.m in Sources */,
+				AA441C401CE1A9AB0056993D /* JHPhotoModel.m in Sources */,
+				AA2CC5E11CE057FF00B1551A /* PhotoCollectionItem.m in Sources */,
 				AAA363A91CC8C4150010D876 /* MASConstraintMaker.m in Sources */,
 				AAA363AD1CC8C4150010D876 /* NSArray+MASAdditions.m in Sources */,
 				AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */,

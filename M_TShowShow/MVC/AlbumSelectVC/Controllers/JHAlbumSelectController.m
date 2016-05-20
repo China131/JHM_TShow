@@ -8,31 +8,83 @@
 
 #import "JHAlbumSelectController.h"
 #import <Photos/Photos.h>
-@interface JHAlbumSelectController ()
+#import "JHAlumShowCell.h"
+#import "JHAlumPhotoShowController.h"
+@interface JHAlbumSelectController ()<UITableViewDelegate,UITableViewDataSource>
 
+@property (nonatomic,strong) UITableView * tableView;
+
+@property (nonatomic,strong) PHFetchResult * allAblubResult;
+
+@property (nonatomic,strong) NSMutableArray * deviceAlumDataArr;
 @end
 
 @implementation JHAlbumSelectController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.title = @"选择照片";
 
+#pragma mark---------------------------------------->初始化基本视图
+- (void)comfigBaseTableView{
     
+    
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, k_SCREEN_WIDTH, k_SCREEN_HEIGHT-64) style:UITableViewStylePlain];
+    _tableView.dataSource = self;
+    _tableView.delegate = self;
+    _tableView.separatorColor = [UIColor blackColor];
+
+    _tableView.backgroundColor = [UIColor blackColor];
+    [self.view addSubview:_tableView];
+   
+}
+
+
+#pragma mark---------------------------------------->初始化相册集合
+- (void)configBaseData{
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     
-    PHFetchResult *smartAlbumFetchResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeSmartAlbumUserLibrary options:fetchOptions];
-    
+    _deviceAlumDataArr = [NSMutableArray array];
+    /* 系统相册 */
+    PHFetchResult *smartAlbumFetchResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAny options:fetchOptions];
+    _allAblubResult = smartAlbumFetchResult;
     for (PHAssetCollection *sub in smartAlbumFetchResult) {
-        PHFetchResult *group = [PHAsset fetchAssetsInAssetCollection:sub options:nil];
-        PHImageRequestOptions *options = [PHImageRequestOptions new];
-        [[PHImageManager defaultManager] requestImageForAsset:group.lastObject targetSize:CGSizeMake(70, 70) contentMode:PHImageContentModeDefault options:options resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            
-        }];
+        PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:sub options:nil];
+        
+        if (result.count==0) {
+            continue;
+        }
+        
+        [_deviceAlumDataArr addObject:sub];
+        
+    }
+    
+    PHFetchResult *smartAlbumFetchResult2 = [PHAssetCollection fetchTopLevelUserCollectionsWithOptions:nil];
+    
+    for (PHAssetCollection *sub in smartAlbumFetchResult2) {
+        
+        PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:sub options:nil];
+        
+        if (result.count==0) {
+            continue;
+        }
+        
+        [_deviceAlumDataArr addObject:sub];
         
     }
     
     
+    
+}
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+     self.view.backgroundColor = [UIColor blackColor];
+    [self showTheMainScreenBtnAndTitleString:@"选择照片"];
+    
+  
+    [self configBaseData];
+    
+    [self comfigBaseTableView];
+    
+
     
     
     
@@ -43,67 +95,69 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return _deviceAlumDataArr.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
     
+    JHAlumShowCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ShowCell"];
+    
+    if (!cell) {
+        cell = [[NSBundle mainBundle] loadNibNamed:@"JHAlumShowCell" owner:self options:nil][0];
+    }
+    
+    cell.collection = _deviceAlumDataArr[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+  
     return cell;
-}
-*/
+    
+    
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 90;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    if ([cell respondsToSelector:@selector(setSeparatorInset:)]) {
+        cell.separatorInset = UIEdgeInsetsZero;
+    }
+    
+    if ([cell respondsToSelector:@selector(setLayoutMargins:)]) {
+        cell.layoutMargins = UIEdgeInsetsZero;
+    }
+    
+    
+    
+    
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    PHAssetCollection *collection = _deviceAlumDataArr[indexPath.row];
+    
+    JHAlumPhotoShowController *photoShow = [JHAlumPhotoShowController new];
+    
+    photoShow.collection = collection;
+    
+    [self.navigationController pushViewController:photoShow animated:YES];
+    
 }
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

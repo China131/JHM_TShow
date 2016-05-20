@@ -9,8 +9,9 @@
 #ifndef M_TShowShow_PCH_pch
 #define M_TShowShow_PCH_pch
 #import "Masonry.h"
+#import <Photos/Photos.h>
 #define k_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define k_SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-
+#define k_DEVICE_SCALE  k_SCREEN_WIDTH/320.0
 
 #endif /* M_TShowShow_PCH_pch */

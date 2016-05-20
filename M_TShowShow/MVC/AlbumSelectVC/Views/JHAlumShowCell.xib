@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" rowHeight="153" id="KGk-i7-Jjw" customClass="JHAlumShowCell">
+            <rect key="frame" x="0.0" y="0.0" width="527" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="527" height="152"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gc-Zz-6FF">
+                        <rect key="frame" x="13" y="13" width="126" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4gc-Zz-6FF" secondAttribute="height" multiplier="1:1" id="Qg4-cx-C9W"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqj-W7-iCH">
+                        <rect key="frame" x="147" y="51" width="200" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="axu-vz-d62"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X95-4Z-Lvf">
+                        <rect key="frame" x="147" y="77" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icon_morefuction_arrow_a.png" translatesAutoresizingMaskIntoConstraints="NO" id="OFj-lI-cgr">
+                        <rect key="frame" x="488" y="44" width="20" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="OFj-lI-cgr" secondAttribute="height" multiplier="7:24" id="LBH-CL-79d"/>
+                            <constraint firstAttribute="width" secondItem="OFj-lI-cgr" secondAttribute="height" multiplier="5:11" id="MQ7-bE-7Iw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="LBH-CL-79d"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.18634354440789475" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="4gc-Zz-6FF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="1QH-aQ-nF1"/>
+                    <constraint firstItem="OFj-lI-cgr" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="21:152" id="C60-Hf-yju"/>
+                    <constraint firstItem="4gc-Zz-6FF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="N39-Ag-ch7"/>
+                    <constraint firstItem="lqj-W7-iCH" firstAttribute="leading" secondItem="4gc-Zz-6FF" secondAttribute="trailing" constant="8" id="a8a-dV-QCD"/>
+                    <constraint firstItem="lqj-W7-iCH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-15" id="br3-wy-tNl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="OFj-lI-cgr" secondAttribute="trailing" constant="5" id="dJg-38-eJ1"/>
+                    <constraint firstItem="X95-4Z-Lvf" firstAttribute="top" secondItem="lqj-W7-iCH" secondAttribute="bottom" constant="5" id="jN5-Mc-E5B"/>
+                    <constraint firstItem="lqj-W7-iCH" firstAttribute="leading" secondItem="X95-4Z-Lvf" secondAttribute="leading" id="kB8-S2-eCi"/>
+                    <constraint firstItem="OFj-lI-cgr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oEy-kg-qOw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4gc-Zz-6FF" secondAttribute="bottom" constant="5" id="sKC-04-dpF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="C60-Hf-yju"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="alumNameLab" destination="lqj-W7-iCH" id="bCU-zx-bNv"/>
+                <outlet property="alumSubImgCountLab" destination="X95-4Z-Lvf" id="mgj-hI-Qkf"/>
+                <outlet property="coverImgView" destination="4gc-Zz-6FF" id="Gzo-8B-PbN"/>
+            </connections>
+            <point key="canvasLocation" x="467.5" y="327.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_morefuction_arrow_a.png" width="10" height="17"/>
+    </resources>
+</document>

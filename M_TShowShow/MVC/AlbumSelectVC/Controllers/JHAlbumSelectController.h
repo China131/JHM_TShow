@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface JHAlbumSelectController : UITableViewController
+#import "JHBaseViewController.h"
+@interface JHAlbumSelectController : JHBaseViewController
 
 @end

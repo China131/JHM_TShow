@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface JHBaseViewController : UIViewController
+- (void)showTheMainScreenBtnAndTitleString:(NSString *)titles;
 
+- (void)hideTheBackBtnWithDescStr:(NSString *)str;
+
+- (void)showTheTakePhotosBtn;
+
+- (void)setTheTitleWithString:(NSString *)titles;
 @end

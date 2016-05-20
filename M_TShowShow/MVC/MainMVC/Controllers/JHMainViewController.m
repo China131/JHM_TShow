@@ -30,7 +30,17 @@
 }
 
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    self.navigationController.navigationBarHidden = YES;
+    [super viewWillAppear:animated];
+}
 
+-(void)viewDidDisappear:(BOOL)animated{
+    self.navigationController.navigationBarHidden = NO;
+    [super viewDidDisappear:animated];
+    
+}
 
 - (void)configBackgroundView
 {
@@ -103,7 +113,7 @@
     
     
     /* 按钮的宽度  间距 */
-    CGFloat wid = 90;
+    CGFloat wid = 90*k_DEVICE_SCALE;
     CGFloat spa = 20;
     CGFloat preAndEnd = (k_SCREEN_WIDTH - wid*2 - spa)/2;
     
@@ -132,7 +142,7 @@
         NSInteger col = i%2;
         if (i<6) {
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.equalTo(bgScrollView.mas_top).with.offset(spa+row*wid);
+                make.top.equalTo(bgScrollView.mas_top).with.offset(spa+row*wid+20);
                 make.left.equalTo(bgScrollView.mas_left).with.offset(preAndEnd+(wid + spa)*col);
                 make.width.mas_equalTo(wid);
                 make.height.mas_equalTo(wid);
@@ -142,7 +152,7 @@
             row -= 3;
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
                 
-                make.top.equalTo(bgScrollView.mas_top).with.offset(spa+row*wid);
+                make.top.equalTo(bgScrollView.mas_top).with.offset(spa+row*wid+20);
                 make.left.equalTo(bgScrollView.mas_left).with.offset(preAndEnd+(wid + spa)*col+k_SCREEN_WIDTH);
                 make.width.mas_equalTo(wid);
                 make.height.mas_equalTo(wid);
