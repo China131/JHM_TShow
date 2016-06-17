@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void(^JH_BASE_BLOCK) (id obj);
 @interface JHBaseViewController : UIViewController
+
+/*        公共回调block         */
+@property (nonatomic,copy)JH_BASE_BLOCK  baseBlock;
+
+
+/*        <##>         */
 - (void)showTheMainScreenBtnAndTitleString:(NSString *)titles;
 
 - (void)hideTheBackBtnWithDescStr:(NSString *)str;

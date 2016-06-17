@@ -151,7 +151,7 @@
         }else{
             row -= 3;
             [btn mas_makeConstraints:^(MASConstraintMaker *make) {
-                
+        
                 make.top.equalTo(bgScrollView.mas_top).with.offset(spa+row*wid+20);
                 make.left.equalTo(bgScrollView.mas_left).with.offset(preAndEnd+(wid + spa)*col+k_SCREEN_WIDTH);
                 make.width.mas_equalTo(wid);

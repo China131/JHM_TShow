@@ -6,6 +6,14 @@
 //  Copyright © 2016年 JH. All rights reserved.
 //
 
+/************************************************************
+ *                                                           *
+ *                                                           *
+                        图片美化界面
+ *                                                           *
+ *                                                           *
+ ************************************************************/
+
 #import "JHBaseViewController.h"
 #import <Photos/Photos.h>
 @interface JHBeautifyPhotoController : JHBaseViewController

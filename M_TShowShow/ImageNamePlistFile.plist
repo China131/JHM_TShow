@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>intelligentResurance</key>
+	<dict>
+		<key>HighlightedIconList</key>
+		<array>
+			<string>icon_autobeauty1_b</string>
+			<string>icon_autobeauty2_b</string>
+			<string>icon_autobeauty4_b</string>
+			<string>icon_autobeauty5_b</string>
+			<string>icon_autobeauty6_b</string>
+			<string>icon_autobeauty7_b</string>
+			<string>icon_autobeauty3_b</string>
+		</array>
+		<key>normalIconList</key>
+		<array>
+			<string>icon_autobeauty1_a</string>
+			<string>icon_autobeauty2_a</string>
+			<string>icon_autobeauty4_a</string>
+			<string>icon_autobeauty5_a</string>
+			<string>icon_autobeauty6_a</string>
+			<string>icon_autobeauty7_a</string>
+			<string>icon_autobeauty3_a</string>
+		</array>
+		<key>titleList</key>
+		<array>
+			<string>原图</string>
+			<string>自动</string>
+			<string>美食</string>
+			<string>静物</string>
+			<string>风景</string>
+			<string>去雾</string>
+			<string>人物</string>
+		</array>
+	</dict>
+</dict>
+</plist>

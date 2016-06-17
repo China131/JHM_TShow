@@ -6,6 +6,18 @@
 //  Copyright © 2016年 JH. All rights reserved.
 //
 
+/************************************************************
+*                                                           *
+*                                                           *
+                         相册列表界面
+*                                                           *
+*                                                           *
+************************************************************/
+
+
+
+/*        系统展示         */
+
 #import <UIKit/UIKit.h>
 #import "JHBaseViewController.h"
 @interface JHAlbumSelectController : JHBaseViewController
