@@ -7,6 +7,7 @@
 //
 
 #import "JHBaseViewController.h"
+#import "CJCustomeButtonForDark.h"
 
 @interface JHBeautifyBaseVC : JHBaseViewController
 

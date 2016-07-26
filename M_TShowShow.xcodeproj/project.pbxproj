@@ -1798,6 +1798,8 @@
 		AAA363AE1CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A01CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		AAA363AF1CC8C4150010D876 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A21CC8C4150010D876 /* View+MASAdditions.m */; };
 		AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */; };
+		E9372D781D45B0370045045C /* JHFeilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D771D45B0370045045C /* JHFeilterManager.m */; };
+		E9372D7C1D45B2A60045045C /* JHSepecialEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */; };
 		E99A52581D0EE97F00E21F67 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A50681D0EE97F00E21F67 /* AppIcon29x29.png */; };
 		E99A52591D0EE97F00E21F67 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A50691D0EE97F00E21F67 /* AppIcon29x29@2x.png */; };
 		E99A525A1D0EE97F00E21F67 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A506A1D0EE97F00E21F67 /* AppIcon29x29@3x.png */; };
@@ -4134,6 +4136,11 @@
 		AAA363A31CC8C4150010D876 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		AAA363A41CC8C4150010D876 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		E9372D761D45B0370045045C /* JHFeilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFeilterManager.h; sourceTree = "<group>"; };
+		E9372D771D45B0370045045C /* JHFeilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFeilterManager.m; sourceTree = "<group>"; };
+		E9372D791D45B0530045045C /* JHFilterMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHFilterMatrix.h; sourceTree = "<group>"; };
+		E9372D7A1D45B2A60045045C /* JHSepecialEffectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSepecialEffectVC.h; sourceTree = "<group>"; };
+		E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSepecialEffectVC.m; sourceTree = "<group>"; };
 		E99A50681D0EE97F00E21F67 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		E99A50691D0EE97F00E21F67 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		E99A506A1D0EE97F00E21F67 /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
@@ -7340,6 +7347,8 @@
 			children = (
 				E9AE30081D102F6500E76DCF /* JHIntelligentBeautifyVC.h */,
 				E9AE30091D102F6500E76DCF /* JHIntelligentBeautifyVC.m */,
+				E9372D7A1D45B2A60045045C /* JHSepecialEffectVC.h */,
+				E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -7361,6 +7370,9 @@
 		E9AE300D1D103AB200E76DCF /* ImageManager */ = {
 			isa = PBXGroup;
 			children = (
+				E9372D791D45B0530045045C /* JHFilterMatrix.h */,
+				E9372D761D45B0370045045C /* JHFeilterManager.h */,
+				E9372D771D45B0370045045C /* JHFeilterManager.m */,
 				E9AE300E1D103AC600E76DCF /* JHImageManager.h */,
 				E9AE300F1D103AC600E76DCF /* JHImageManager.m */,
 			);
@@ -9753,6 +9765,7 @@
 				AA1ABC131CC8B20B00BA7B88 /* AppDelegate.m in Sources */,
 				AA1ACA141CC8B36D00BA7B88 /* JHBaseViewController.m in Sources */,
 				E9AE30031D102DAE00E76DCF /* JHBeautifyBaseVC.m in Sources */,
+				E9372D781D45B0370045045C /* JHFeilterManager.m in Sources */,
 				AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */,
 				AA1ABC1C1CC8B20C00BA7B88 /* M_TShowShow.xcdatamodeld in Sources */,
 				AA11DE201CC9F45A00279F1E /* JHCustomerMainButton.m in Sources */,
@@ -9772,6 +9785,7 @@
 				E9AE300A1D102F6500E76DCF /* JHIntelligentBeautifyVC.m in Sources */,
 				AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */,
 				AAA363A81CC8C4150010D876 /* MASConstraint.m in Sources */,
+				E9372D7C1D45B2A60045045C /* JHSepecialEffectVC.m in Sources */,
 				AAA363AA1CC8C4150010D876 /* MASLayoutConstraint.m in Sources */,
 				AA1ABC101CC8B20B00BA7B88 /* main.m in Sources */,
 			);
@@ -9917,6 +9931,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/M_TShowShow/Others/M_TShowShow_PCH.pch";
 				INFOPLIST_FILE = M_TShowShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JH.M-TShowShow";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -9930,6 +9945,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/M_TShowShow/Others/M_TShowShow_PCH.pch";
 				INFOPLIST_FILE = M_TShowShow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "JH.M-TShowShow";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -22,4 +22,6 @@ typedef void(^JH_BASE_BLOCK) (id obj);
 - (void)showTheTakePhotosBtn;
 
 - (void)setTheTitleWithString:(NSString *)titles;
+
+- (void)hideTheNavigationBarWithAnimation:(BOOL)animation;
 @end

@@ -113,4 +113,12 @@
     
 }
 
+
+-(void)hideTheNavigationBarWithAnimation:(BOOL)animation{
+    
+    [self.navigationController setNavigationBarHidden:YES animated:animation];
+    
+    
+}
+
 @end

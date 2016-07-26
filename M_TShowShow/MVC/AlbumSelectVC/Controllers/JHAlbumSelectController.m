@@ -39,12 +39,18 @@
 
 #pragma mark---------------------------------------->初始化相册集合
 - (void)configBaseData{
+    
+    /*        相册配置  使用默认即可         */
     PHFetchOptions *fetchOptions = [PHFetchOptions new];
     
+    /*        初始化相册数组         */
     _deviceAlumDataArr = [NSMutableArray array];
-    /* 系统相册 */
+    
+    /* 获取系统创建的相册 */
     PHFetchResult *smartAlbumFetchResult = [PHAssetCollection fetchAssetCollectionsWithType:PHAssetCollectionTypeSmartAlbum subtype:PHAssetCollectionSubtypeAny options:fetchOptions];
     _allAblubResult = smartAlbumFetchResult;
+    
+    /*        遍历系统创建相册结果集         */
     for (PHAssetCollection *sub in smartAlbumFetchResult) {
         PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:sub options:nil];
         
@@ -52,12 +58,15 @@
             continue;
         }
         
+        /*        添加具体相册到相册数组         */
         [_deviceAlumDataArr addObject:sub];
         
     }
     
+    /*        获取所有的用户创建相册         */
     PHFetchResult *smartAlbumFetchResult2 = [PHAssetCollection fetchTopLevelUserCollectionsWithOptions:nil];
     
+    /*        遍历用户自建相册结果集         */
     for (PHAssetCollection *sub in smartAlbumFetchResult2) {
         
         PHFetchResult *result = [PHAsset fetchAssetsInAssetCollection:sub options:nil];
@@ -65,7 +74,7 @@
         if (result.count==0) {
             continue;
         }
-        
+        /*        添加具体相册到相册数组         */
         [_deviceAlumDataArr addObject:sub];
         
     }

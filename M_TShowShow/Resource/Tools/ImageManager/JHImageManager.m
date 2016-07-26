@@ -19,11 +19,9 @@
         manager = [[JHImageManager alloc] init];
         
     });
-    
     return manager;
     
 }
-
 
 
 +(NSArray *)findImageNameWithFirstFolderName:(NSString *)FirstFolderName andSecondFolderName:(NSString *)folderName{

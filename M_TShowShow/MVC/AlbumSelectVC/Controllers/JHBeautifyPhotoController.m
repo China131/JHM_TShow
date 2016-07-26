@@ -9,7 +9,8 @@
 #import "JHBeautifyPhotoController.h"
 #import "CJCustomeButtonForDark.h"
 #import "JHBeautifyBaseVC.h"
-#import "JHIntelligentBeautifyVC.h"
+#import "JHIntelligentBeautifyVC.h"、
+#import "JHSepecialEffectVC.h"
 @interface JHBeautifyPhotoController ()
 
 
@@ -46,7 +47,7 @@
     
     [_currentImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.equalTo(self.view.mas_top).with.offset(64);
+        make.top.equalTo(self.view.mas_top).with.offset(0);
         make.left.equalTo(self.view.mas_left).with.offset(0);
         make.width.mas_equalTo(k_SCREEN_WIDTH);
         make.height.mas_equalTo(k_SCREEN_HEIGHT-64);
@@ -102,12 +103,8 @@
             make.width.mas_equalTo(itemsWid);
             make.height.mas_equalTo(itemsWid);
         }];
-        
-       
-        
     }
-   
-    
+
     CJCustomeButtonForDark *btns = [CJCustomeButtonForDark buttonWithType:UIButtonTypeCustom];
     [btns setTitle:@"去美容" forState:UIControlStateNormal];
     [btns setImage:[UIImage imageNamed:@"icon_share_cosmesis"] forState:UIControlStateNormal];
@@ -149,7 +146,7 @@
     _nowSelectBtn.selected  = NO;
     sender.selected = YES;
     _nowSelectBtn = sender;
-    NSArray *mvcList = @[@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC"];
+    NSArray *mvcList = @[@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHSepecialEffectVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC"];
     JHBeautifyBaseVC *base = [[NSClassFromString(mvcList[sender.tag]) alloc] init];
     
     base.imageAsset = _currentAsset;
@@ -158,8 +155,8 @@
         
         
     };
-    
-    [self.navigationController pushViewController:base animated:YES];
+    [self hideTheNavigationBarWithAnimation:YES];
+    [self.navigationController pushViewController:base animated:NO];
     
     
 }
