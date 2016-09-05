@@ -1,23 +1,22 @@
 //
-//  JHSepecialEffectVC.m
+//  JHEditViewController.m
 //  M_TShowShow
 //
-//  Created by 简豪 on 16/7/25.
+//  Created by 简豪 on 16/7/27.
 //  Copyright © 2016年 JH. All rights reserved.
 //
 
-#import "JHSepecialEffectVC.h"
-#import "JHFilterMatrix.h"
+#import "JHEditViewController.h"
 #import "JHFeilterManager.h"
-@interface JHSepecialEffectVC ()
+
+@interface JHEditViewController ()
 @property(nonatomic,strong)UIImageView *currentImgView;
 @property (nonatomic,strong)CJCustomeButtonForDark * nowSelectBtn;
 @property (nonatomic,strong)__block UIImage * selfImage;
 @property (nonatomic,strong)NSArray * drawImagArr;
-
 @end
 
-@implementation JHSepecialEffectVC
+@implementation JHEditViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,7 +31,7 @@
     
     /*        初始化美化的图片         */
     _currentImgView = [[UIImageView alloc] init];
-
+    
     [[PHImageManager defaultManager] requestImageForAsset:self.imageAsset targetSize:CGSizeMake(k_SCREEN_WIDTH,((CGFloat)self.imageAsset.pixelHeight)/self.imageAsset.pixelWidth*k_SCREEN_WIDTH) contentMode:PHImageContentModeAspectFill options:[PHImageRequestOptions new] resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
         _currentImgView.contentMode = UIViewContentModeScaleAspectFit;
         _currentImgView.image = result;
@@ -48,26 +47,14 @@
         make.width.mas_equalTo(k_SCREEN_WIDTH);
         make.height.mas_equalTo(k_SCREEN_HEIGHT-30 - 100);
     }];
-    NSArray *imageList = [JHImageManager findImageNameWithFirstFolderName:@"intelligentResurance" andSecondFolderName:@"normalIconList"];
-    
-    NSArray *heightedImageList = [JHImageManager findImageNameWithFirstFolderName:@"intelligentResurance" andSecondFolderName:@"HighlightedIconList"];
-    NSArray *nameList = [JHImageManager findImageNameWithFirstFolderName:@"intelligentResurance" andSecondFolderName:@"titleList"];
-    
-    UIScrollView *scrollView = [[UIScrollView alloc] init];
-    
-    [self.view addSubview:scrollView];
+    NSArray *imageList = [JHImageManager findImageNameWithFirstFolderName:@"editResource" andSecondFolderName:@"ThreeNormal"];
+    NSArray *heightedImageList = [JHImageManager findImageNameWithFirstFolderName:@"editResource" andSecondFolderName:@"ThreeHeight"];
+    NSArray *nameList = [JHImageManager findImageNameWithFirstFolderName:@"editResource" andSecondFolderName:@"titleList"];
+
     CGFloat itemsWid = 60;
-    CGFloat spa = 10;
+    CGFloat spa = (k_SCREEN_WIDTH / 5 * 2 - itemsWid * 3)/2.0;
     
-    scrollView.contentSize = CGSizeMake(spa+(spa+itemsWid)*(nameList.count-1)-5, 0);
-    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
-        make.bottom.equalTo(self.view.mas_bottom).with.offset(-40);
-        make.left.equalTo(self.view.mas_left).with.offset(0);
-        make.width.mas_equalTo(k_SCREEN_WIDTH);
-        make.height.mas_equalTo(50);
-        
-    }];
+
     /*        底部按钮         */
     for (NSInteger i = 0; i<nameList.count; i++) {
         CJCustomeButtonForDark *btn = [CJCustomeButtonForDark buttonWithType:UIButtonTypeCustom];
@@ -75,7 +62,7 @@
         [btn setImage:[UIImage imageNamed:heightedImageList[i]] forState:UIControlStateSelected];
         [btn setTitle:nameList[i] forState:UIControlStateNormal];
         btn.titleLabel.font = [UIFont systemFontOfSize:8];
-        [scrollView addSubview:btn];
+        [self.view addSubview:btn];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
         btn.tag = i ;
         [btn addTarget:self action:@selector(beautyTypeBtnClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -87,10 +74,10 @@
         
         [btn mas_makeConstraints:^(MASConstraintMaker *make) {
             
-            make.top.equalTo(scrollView.mas_top).with.offset(0);
-            make.left.equalTo(scrollView.mas_left).with.offset((itemsWid+1)*i+spa);
-            make.width.mas_equalTo(itemsWid-15);
-            make.height.mas_equalTo(itemsWid-10);
+            make.bottom.equalTo(self.view.mas_bottom).with.offset(-5);
+            make.left.equalTo(self.view.mas_left).with.offset((itemsWid+spa)*i + k_SCREEN_WIDTH / 5 * 3 /2);
+            make.width.mas_equalTo(itemsWid);
+            make.height.mas_equalTo(itemsWid);
         }];
         
         
@@ -99,13 +86,13 @@
     
     NSArray *imgArr = @[@"btn_cancel_a",@"btn_ok_a"];
     
-
+    
     
     /*        底部按钮         */
     for (NSInteger i = 0; i<imgArr.count; i++) {
         CJCustomeButtonForDark *btn = [CJCustomeButtonForDark buttonWithType:UIButtonTypeCustom];
         [btn setImage:[UIImage imageNamed:imgArr[i]] forState:UIControlStateNormal];
-
+        
         btn.titleLabel.font = [UIFont systemFontOfSize:8];
         [self.view addSubview:btn];
         btn.titleLabel.textAlignment = NSTextAlignmentCenter;
@@ -121,9 +108,9 @@
             
             make.bottom.equalTo(self.view.mas_bottom).with.offset(10);
             if (i==0) {
-               make.left.equalTo(self.view.mas_left).with.offset(10);
+                make.left.equalTo(self.view.mas_left).with.offset(10);
             }else{
-               make.right.equalTo(self.view.mas_right).with.offset(-10);
+                make.right.equalTo(self.view.mas_right).with.offset(-10);
             }
             
             make.width.mas_equalTo(itemsWid-10);
@@ -154,25 +141,18 @@
     sender.selected = YES;
     _nowSelectBtn = sender;
 
-    JHFeilterManager *manager = [JHFeilterManager new];
-    float *(p)[20] = {colormatrix_huaijiu,colormatrix_heibai,colormatrix_lomo,colormatrix_danya,colormatrix_ruise,colormatrix_gete};
-
-    
-    if (sender.tag == 0) {
-        self.currentImgView.image = _selfImage;
-    }else
-        
-//        float s[] = p[sender.tag -1];
-    
-    
-        self.currentImgView.image = [manager createImageWithImage:_selfImage andColorMatrix:p[sender.tag-1]];
-    _currentImgView.contentMode = UIViewContentModeScaleAspectFit;
-    NSLog(@"%@",_selfImage);
-}
-
-
--(void)dealloc{
     
 }
+
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

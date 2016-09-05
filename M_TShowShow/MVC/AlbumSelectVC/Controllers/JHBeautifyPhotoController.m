@@ -9,8 +9,10 @@
 #import "JHBeautifyPhotoController.h"
 #import "CJCustomeButtonForDark.h"
 #import "JHBeautifyBaseVC.h"
-#import "JHIntelligentBeautifyVC.h"、
+#import "JHIntelligentBeautifyVC.h"
 #import "JHSepecialEffectVC.h"
+
+#import "JHEditViewController.h"
 @interface JHBeautifyPhotoController ()
 
 
@@ -146,7 +148,7 @@
     _nowSelectBtn.selected  = NO;
     sender.selected = YES;
     _nowSelectBtn = sender;
-    NSArray *mvcList = @[@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHSepecialEffectVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC"];
+    NSArray *mvcList = @[@"JHIntelligentBeautifyVC",@"JHEditViewController",@"JHIntelligentBeautifyVC",@"JHSepecialEffectVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC",@"JHIntelligentBeautifyVC"];
     JHBeautifyBaseVC *base = [[NSClassFromString(mvcList[sender.tag]) alloc] init];
     
     base.imageAsset = _currentAsset;

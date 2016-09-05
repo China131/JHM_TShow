@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "282481F82904858DDD438E599E0747091AC71651",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "282481F82904858DDD438E599E0747091AC71651" : 0,
+    "05B31EF991A76A9CFFF4DF36E9AF637001A60958" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "792747D7-1201-4C6B-8EB6-54BC0500DD05",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "282481F82904858DDD438E599E0747091AC71651" : "M_TShowShow\/",
+    "05B31EF991A76A9CFFF4DF36E9AF637001A60958" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "M_TShowShow",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "M_TShowShow.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/China131\/CJPravate.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "05B31EF991A76A9CFFF4DF36E9AF637001A60958"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/China131\/JHM_TShow.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "282481F82904858DDD438E599E0747091AC71651"
+    }
+  ]
+}

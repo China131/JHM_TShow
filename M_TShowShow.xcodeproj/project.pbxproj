@@ -1800,6 +1800,7 @@
 		AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */; };
 		E9372D781D45B0370045045C /* JHFeilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D771D45B0370045045C /* JHFeilterManager.m */; };
 		E9372D7C1D45B2A60045045C /* JHSepecialEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */; };
+		E94456261D48443800FC3D6E /* JHEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94456251D48443800FC3D6E /* JHEditViewController.m */; };
 		E99A52581D0EE97F00E21F67 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A50681D0EE97F00E21F67 /* AppIcon29x29.png */; };
 		E99A52591D0EE97F00E21F67 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A50691D0EE97F00E21F67 /* AppIcon29x29@2x.png */; };
 		E99A525A1D0EE97F00E21F67 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E99A506A1D0EE97F00E21F67 /* AppIcon29x29@3x.png */; };
@@ -4141,6 +4142,8 @@
 		E9372D791D45B0530045045C /* JHFilterMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHFilterMatrix.h; sourceTree = "<group>"; };
 		E9372D7A1D45B2A60045045C /* JHSepecialEffectVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSepecialEffectVC.h; sourceTree = "<group>"; };
 		E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSepecialEffectVC.m; sourceTree = "<group>"; };
+		E94456241D48443800FC3D6E /* JHEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHEditViewController.h; sourceTree = "<group>"; };
+		E94456251D48443800FC3D6E /* JHEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHEditViewController.m; sourceTree = "<group>"; };
 		E99A50681D0EE97F00E21F67 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		E99A50691D0EE97F00E21F67 /* AppIcon29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x.png"; sourceTree = "<group>"; };
 		E99A506A1D0EE97F00E21F67 /* AppIcon29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@3x.png"; sourceTree = "<group>"; };
@@ -4685,12 +4688,12 @@
 			children = (
 				AA11DE251CCA197500279F1E /* JHAlbumSelectController.h */,
 				AA11DE261CCA197500279F1E /* JHAlbumSelectController.m */,
+				AA2CC5E81CE06B2700B1551A /* JHShowPhotoController.h */,
+				AA2CC5E91CE06B2700B1551A /* JHShowPhotoController.m */,
 				AA6014DA1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.h */,
 				AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */,
 				AA2CC5E51CE0660000B1551A /* JHBeautifyPhotoController.h */,
 				AA2CC5E61CE0660000B1551A /* JHBeautifyPhotoController.m */,
-				AA2CC5E81CE06B2700B1551A /* JHShowPhotoController.h */,
-				AA2CC5E91CE06B2700B1551A /* JHShowPhotoController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -7349,6 +7352,8 @@
 				E9AE30091D102F6500E76DCF /* JHIntelligentBeautifyVC.m */,
 				E9372D7A1D45B2A60045045C /* JHSepecialEffectVC.h */,
 				E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */,
+				E94456241D48443800FC3D6E /* JHEditViewController.h */,
+				E94456251D48443800FC3D6E /* JHEditViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -9764,6 +9769,7 @@
 				E9AE30101D103AC600E76DCF /* JHImageManager.m in Sources */,
 				AA1ABC131CC8B20B00BA7B88 /* AppDelegate.m in Sources */,
 				AA1ACA141CC8B36D00BA7B88 /* JHBaseViewController.m in Sources */,
+				E94456261D48443800FC3D6E /* JHEditViewController.m in Sources */,
 				E9AE30031D102DAE00E76DCF /* JHBeautifyBaseVC.m in Sources */,
 				E9372D781D45B0370045045C /* JHFeilterManager.m in Sources */,
 				AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */,
