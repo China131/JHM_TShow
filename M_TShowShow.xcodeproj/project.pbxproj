@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2474D6FBA1DBC80AB821D8BF /* libPods-M_TShowShow.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BEFFF09E46DCF2A2A1E0FC2 /* libPods-M_TShowShow.a */; };
 		AA11DE201CC9F45A00279F1E /* JHCustomerMainButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11DE1F1CC9F45A00279F1E /* JHCustomerMainButton.m */; };
 		AA11DE271CCA197500279F1E /* JHAlbumSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11DE261CCA197500279F1E /* JHAlbumSelectController.m */; };
 		AA1ABC101CC8B20B00BA7B88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1ABC0F1CC8B20B00BA7B88 /* main.m */; };
@@ -48,26 +49,6 @@
 		AA1AC3481CC8B2B700BA7B88 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC641CC8B2A800BA7B88 /* AppIcon29x29.png */; };
 		AA1AC3491CC8B2B700BA7B88 /* AppIcon29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC651CC8B2A800BA7B88 /* AppIcon29x29@2x.png */; };
 		AA1AC34A1CC8B2B700BA7B88 /* AppIcon29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC661CC8B2A800BA7B88 /* AppIcon29x29@3x.png */; };
-		AA1AC34B1CC8B2B700BA7B88 /* AppIcon40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC671CC8B2A800BA7B88 /* AppIcon40x40@2x.png */; };
-		AA1AC34C1CC8B2B700BA7B88 /* AppIcon40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC681CC8B2A800BA7B88 /* AppIcon40x40@3x.png */; };
-		AA1AC34D1CC8B2B700BA7B88 /* AppIcon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC691CC8B2A800BA7B88 /* AppIcon57x57.png */; };
-		AA1AC34E1CC8B2B700BA7B88 /* AppIcon57x57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6A1CC8B2A800BA7B88 /* AppIcon57x57@2x.png */; };
-		AA1AC34F1CC8B2B700BA7B88 /* AppIcon60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6B1CC8B2A800BA7B88 /* AppIcon60x60@2x.png */; };
-		AA1AC3501CC8B2B700BA7B88 /* AppIcon60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6C1CC8B2A800BA7B88 /* AppIcon60x60@3x.png */; };
-		AA1AC3511CC8B2B700BA7B88 /* arrow1_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6D1CC8B2A800BA7B88 /* arrow1_normal@2x.png */; };
-		AA1AC3521CC8B2B700BA7B88 /* arrow1_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6E1CC8B2A800BA7B88 /* arrow1_normal@3x.png */; };
-		AA1AC3531CC8B2B700BA7B88 /* assets_blank_icon_110@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC6F1CC8B2A800BA7B88 /* assets_blank_icon_110@2x.png */; };
-		AA1AC3541CC8B2B700BA7B88 /* assets_blank_icon_110@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC701CC8B2A800BA7B88 /* assets_blank_icon_110@3x.png */; };
-		AA1AC3551CC8B2B700BA7B88 /* assets_no_wifi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC711CC8B2A800BA7B88 /* assets_no_wifi@2x.png */; };
-		AA1AC3561CC8B2B700BA7B88 /* assets_no_wifi@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC721CC8B2A800BA7B88 /* assets_no_wifi@3x.png */; };
-		AA1AC3571CC8B2B700BA7B88 /* assets_preview_mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC731CC8B2A800BA7B88 /* assets_preview_mask@2x.png */; };
-		AA1AC3581CC8B2B700BA7B88 /* assets_preview_mask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC741CC8B2A800BA7B88 /* assets_preview_mask@3x.png */; };
-		AA1AC3591CC8B2B700BA7B88 /* bg_blue_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC751CC8B2A800BA7B88 /* bg_blue_selected@2x.png */; };
-		AA1AC35A1CC8B2B700BA7B88 /* bg_blueTooth_scanSign@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC761CC8B2A800BA7B88 /* bg_blueTooth_scanSign@2x.png */; };
-		AA1AC35B1CC8B2B700BA7B88 /* bg_blueTooth_scanSign@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC771CC8B2A800BA7B88 /* bg_blueTooth_scanSign@3x.png */; };
-		AA1AC35C1CC8B2B700BA7B88 /* bg_blur@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC781CC8B2A800BA7B88 /* bg_blur@2x.png */; };
-		AA1AC35D1CC8B2B700BA7B88 /* bg_blur@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC791CC8B2A800BA7B88 /* bg_blur@3x.png */; };
-		AA1AC35E1CC8B2B700BA7B88 /* bg_camera_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC7A1CC8B2A800BA7B88 /* bg_camera_setting.png */; };
 		AA1AC35F1CC8B2B700BA7B88 /* bg_camera_setting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC7B1CC8B2A800BA7B88 /* bg_camera_setting@2x.png */; };
 		AA1AC3601CC8B2B700BA7B88 /* bg_camera_zoomSlider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC7C1CC8B2A800BA7B88 /* bg_camera_zoomSlider@2x.png */; };
 		AA1AC3611CC8B2B700BA7B88 /* bg_camera_zoomSlider@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA1ABC7D1CC8B2A800BA7B88 /* bg_camera_zoomSlider@3x.png */; };
@@ -1787,17 +1768,6 @@
 		AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6014D61CDC8FA70065EBF1 /* JHAlumShowCell.m */; };
 		AA6014D91CDC8FA70065EBF1 /* JHAlumShowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6014D71CDC8FA70065EBF1 /* JHAlumShowCell.xib */; };
 		AA6014DC1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */; };
-		AAA363A61CC8C4150010D876 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AAA3638C1CC8C4150010D876 /* Info.plist */; };
-		AAA363A71CC8C4150010D876 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3638E1CC8C4150010D876 /* MASCompositeConstraint.m */; };
-		AAA363A81CC8C4150010D876 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363911CC8C4150010D876 /* MASConstraint.m */; };
-		AAA363A91CC8C4150010D876 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363931CC8C4150010D876 /* MASConstraintMaker.m */; };
-		AAA363AA1CC8C4150010D876 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363951CC8C4150010D876 /* MASLayoutConstraint.m */; };
-		AAA363AB1CC8C4150010D876 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363991CC8C4150010D876 /* MASViewAttribute.m */; };
-		AAA363AC1CC8C4150010D876 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3639B1CC8C4150010D876 /* MASViewConstraint.m */; };
-		AAA363AD1CC8C4150010D876 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA3639D1CC8C4150010D876 /* NSArray+MASAdditions.m */; };
-		AAA363AE1CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A01CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		AAA363AF1CC8C4150010D876 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A21CC8C4150010D876 /* View+MASAdditions.m */; };
-		AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */; };
 		E9372D781D45B0370045045C /* JHFeilterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D771D45B0370045045C /* JHFeilterManager.m */; };
 		E9372D7C1D45B2A60045045C /* JHSepecialEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9372D7B1D45B2A60045045C /* JHSepecialEffectVC.m */; };
 		E94456261D48443800FC3D6E /* JHEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E94456251D48443800FC3D6E /* JHEditViewController.m */; };
@@ -2312,6 +2282,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CEB596DAFB8E2BBBA959513 /* Pods-M_TShowShow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M_TShowShow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-M_TShowShow/Pods-M_TShowShow.debug.xcconfig"; sourceTree = "<group>"; };
+		1BEFFF09E46DCF2A2A1E0FC2 /* libPods-M_TShowShow.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-M_TShowShow.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA11DE1E1CC9F45A00279F1E /* JHCustomerMainButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCustomerMainButton.h; sourceTree = "<group>"; };
 		AA11DE1F1CC9F45A00279F1E /* JHCustomerMainButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCustomerMainButton.m; sourceTree = "<group>"; };
 		AA11DE251CCA197500279F1E /* JHAlbumSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAlbumSelectController.h; sourceTree = "<group>"; };
@@ -4111,32 +4083,7 @@
 		AA6014DA1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAlumPhotoShowController.h; sourceTree = "<group>"; };
 		AA6014DB1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAlumPhotoShowController.m; sourceTree = "<group>"; };
 		AAA363891CC8C0520010D876 /* M_TShowShow_PCH.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = M_TShowShow_PCH.pch; sourceTree = "<group>"; };
-		AAA3638C1CC8C4150010D876 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AAA3638D1CC8C4150010D876 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		AAA3638E1CC8C4150010D876 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		AAA3638F1CC8C4150010D876 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		AAA363901CC8C4150010D876 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		AAA363911CC8C4150010D876 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		AAA363921CC8C4150010D876 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		AAA363931CC8C4150010D876 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		AAA363941CC8C4150010D876 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		AAA363951CC8C4150010D876 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		AAA363961CC8C4150010D876 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		AAA363971CC8C4150010D876 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		AAA363981CC8C4150010D876 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		AAA363991CC8C4150010D876 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		AAA3639A1CC8C4150010D876 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		AAA3639B1CC8C4150010D876 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		AAA3639C1CC8C4150010D876 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		AAA3639D1CC8C4150010D876 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		AAA3639E1CC8C4150010D876 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		AAA3639F1CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		AAA363A01CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		AAA363A11CC8C4150010D876 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		AAA363A21CC8C4150010D876 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		AAA363A31CC8C4150010D876 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		AAA363A41CC8C4150010D876 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		D00167C18581E5C7B9ED17CC /* Pods-M_TShowShow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-M_TShowShow.release.xcconfig"; path = "Pods/Target Support Files/Pods-M_TShowShow/Pods-M_TShowShow.release.xcconfig"; sourceTree = "<group>"; };
 		E9372D761D45B0370045045C /* JHFeilterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFeilterManager.h; sourceTree = "<group>"; };
 		E9372D771D45B0370045045C /* JHFeilterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFeilterManager.m; sourceTree = "<group>"; };
 		E9372D791D45B0530045045C /* JHFilterMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHFilterMatrix.h; sourceTree = "<group>"; };
@@ -4646,6 +4593,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2474D6FBA1DBC80AB821D8BF /* libPods-M_TShowShow.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4732,6 +4680,8 @@
 				AA1ABC2A1CC8B20C00BA7B88 /* M_TShowShowTests */,
 				AA1ABC351CC8B20C00BA7B88 /* M_TShowShowUITests */,
 				AA1ABC0C1CC8B20B00BA7B88 /* Products */,
+				C3AC77E985F80B0501E14A2A /* Pods */,
+				CD550468BD77CFCF1F3107A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -6724,42 +6674,25 @@
 			isa = PBXGroup;
 			children = (
 				E9AE300D1D103AB200E76DCF /* ImageManager */,
-				AAA3638B1CC8C4150010D876 /* Masonry */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		AAA3638B1CC8C4150010D876 /* Masonry */ = {
+		C3AC77E985F80B0501E14A2A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AAA3638C1CC8C4150010D876 /* Info.plist */,
-				AAA3638D1CC8C4150010D876 /* MASCompositeConstraint.h */,
-				AAA3638E1CC8C4150010D876 /* MASCompositeConstraint.m */,
-				AAA3638F1CC8C4150010D876 /* MASConstraint+Private.h */,
-				AAA363901CC8C4150010D876 /* MASConstraint.h */,
-				AAA363911CC8C4150010D876 /* MASConstraint.m */,
-				AAA363921CC8C4150010D876 /* MASConstraintMaker.h */,
-				AAA363931CC8C4150010D876 /* MASConstraintMaker.m */,
-				AAA363941CC8C4150010D876 /* MASLayoutConstraint.h */,
-				AAA363951CC8C4150010D876 /* MASLayoutConstraint.m */,
-				AAA363961CC8C4150010D876 /* Masonry.h */,
-				AAA363971CC8C4150010D876 /* MASUtilities.h */,
-				AAA363981CC8C4150010D876 /* MASViewAttribute.h */,
-				AAA363991CC8C4150010D876 /* MASViewAttribute.m */,
-				AAA3639A1CC8C4150010D876 /* MASViewConstraint.h */,
-				AAA3639B1CC8C4150010D876 /* MASViewConstraint.m */,
-				AAA3639C1CC8C4150010D876 /* NSArray+MASAdditions.h */,
-				AAA3639D1CC8C4150010D876 /* NSArray+MASAdditions.m */,
-				AAA3639E1CC8C4150010D876 /* NSArray+MASShorthandAdditions.h */,
-				AAA3639F1CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.h */,
-				AAA363A01CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m */,
-				AAA363A11CC8C4150010D876 /* View+MASAdditions.h */,
-				AAA363A21CC8C4150010D876 /* View+MASAdditions.m */,
-				AAA363A31CC8C4150010D876 /* View+MASShorthandAdditions.h */,
-				AAA363A41CC8C4150010D876 /* ViewController+MASAdditions.h */,
-				AAA363A51CC8C4150010D876 /* ViewController+MASAdditions.m */,
+				0CEB596DAFB8E2BBBA959513 /* Pods-M_TShowShow.debug.xcconfig */,
+				D00167C18581E5C7B9ED17CC /* Pods-M_TShowShow.release.xcconfig */,
 			);
-			path = Masonry;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CD550468BD77CFCF1F3107A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BEFFF09E46DCF2A2A1E0FC2 /* libPods-M_TShowShow.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E99A50671D0EE97F00E21F67 /* Images */ = {
@@ -7391,9 +7324,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AA1ABC3B1CC8B20C00BA7B88 /* Build configuration list for PBXNativeTarget "M_TShowShow" */;
 			buildPhases = (
+				54EFC363EDFCBCA36EA71915 /* [CP] Check Pods Manifest.lock */,
 				AA1ABC071CC8B20B00BA7B88 /* Sources */,
 				AA1ABC081CC8B20B00BA7B88 /* Frameworks */,
 				AA1ABC091CC8B20B00BA7B88 /* Resources */,
+				591A323BBADBE0F9D84887A2 /* [CP] Embed Pods Frameworks */,
+				BF0D5A684BD6AF3C3779485A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -7451,6 +7387,7 @@
 				TargetAttributes = {
 					AA1ABC0A1CC8B20B00BA7B88 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = HRJA43XU8W;
 					};
 					AA1ABC261CC8B20C00BA7B88 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -7526,7 +7463,6 @@
 				AA1AC5B01CC8B2B700BA7B88 /* home_block_green_b@3x.png in Resources */,
 				AA1AC5491CC8B2B700BA7B88 /* filter_figure_132@3x.jpg in Resources */,
 				E99A53F51D0EE97F00E21F67 /* text_font_thumbnail1@3x.png in Resources */,
-				AA1AC3511CC8B2B700BA7B88 /* arrow1_normal@2x.png in Resources */,
 				E99A52FF1D0EE97F00E21F67 /* border_baikuang_a@2x.jpg in Resources */,
 				AA1AC8791CC8B2B700BA7B88 /* PzlSolidBackground4@3x.jpg in Resources */,
 				AA1AC8A91CC8B2B700BA7B88 /* template002-6@2x.jpg in Resources */,
@@ -7534,7 +7470,6 @@
 				E99A52971D0EE97F00E21F67 /* home_block_blue_a@2x.png in Resources */,
 				AA1AC3621CC8B2B700BA7B88 /* bg_choose_color_pop@2x.png in Resources */,
 				AA1AC54B1CC8B2B700BA7B88 /* filter_figure_134@3x.jpg in Resources */,
-				AA1AC3591CC8B2B700BA7B88 /* bg_blue_selected@2x.png in Resources */,
 				AA1AC8F91CC8B2B700BA7B88 /* template006-10@2x.jpg in Resources */,
 				E99A541E1D0EE97F00E21F67 /* icon_shade_a@2x.png in Resources */,
 				E99A53DF1D0EE97F00E21F67 /* mosaic_style_5@3x.jpg in Resources */,
@@ -7605,7 +7540,6 @@
 				AA1AC9481CC8B2B700BA7B88 /* template009-8@3x.jpg in Resources */,
 				AA1AC4551CC8B2B700BA7B88 /* cosmesis_help_remove@3x.png in Resources */,
 				AA1AC3E01CC8B2B700BA7B88 /* btn_download_green@2x.png in Resources */,
-				AA1AC35D1CC8B2B700BA7B88 /* bg_blur@3x.png in Resources */,
 				AA1AC32F1CC8B2B700BA7B88 /* 004.jpg in Resources */,
 				AA1AC4371CC8B2B700BA7B88 /* camera_flash_off_b@3x.png in Resources */,
 				AA1AC56B1CC8B2B700BA7B88 /* filter_scenery_106@3x.jpg in Resources */,
@@ -7627,7 +7561,6 @@
 				AA1AC4BD1CC8B2B700BA7B88 /* face55.png in Resources */,
 				AA1AC42D1CC8B2B700BA7B88 /* btn_webview_retreat@3x.png in Resources */,
 				E99A53101D0EE97F00E21F67 /* border_simple_18@3x.jpg in Resources */,
-				AA1AC3531CC8B2B700BA7B88 /* assets_blank_icon_110@2x.png in Resources */,
 				E99A52C41D0EE97F00E21F67 /* icon_home_camera@2x.png in Resources */,
 				E99A52B71D0EE97F00E21F67 /* icon_app_mttt@3x.png in Resources */,
 				AA1AC66E1CC8B2B700BA7B88 /* icon_clipScale32_a@2x.png in Resources */,
@@ -7679,7 +7612,6 @@
 				AA1AC79B1CC8B2B700BA7B88 /* magic_brush_08@2x.png in Resources */,
 				AA1AC96B1CC8B2B700BA7B88 /* text_font_thumbnail17_b@2x.png in Resources */,
 				E99A54161D0EE97F00E21F67 /* icon_hightLight_a@2x.png in Resources */,
-				AA1AC3551CC8B2B700BA7B88 /* assets_no_wifi@2x.png in Resources */,
 				E99A53871D0EE97F00E21F67 /* icon_function_color_b@2x.png in Resources */,
 				AA1AC84B1CC8B2B700BA7B88 /* PzlBorder1@3x.png in Resources */,
 				AA1AC5F31CC8B2B700BA7B88 /* icon_autobeauty4_b@3x.png in Resources */,
@@ -7958,7 +7890,6 @@
 				AA1AC5771CC8B2B700BA7B88 /* filter_scenery_180@3x.jpg in Resources */,
 				E99A537E1D0EE97F00E21F67 /* icon_function_bokeh_a@3x.png in Resources */,
 				E99A53E11D0EE97F00E21F67 /* share_tag_line@3x.png in Resources */,
-				AA1AC3581CC8B2B700BA7B88 /* assets_preview_mask@3x.png in Resources */,
 				E99A53541D0EE97F00E21F67 /* icon_clipScale23_b@3x.png in Resources */,
 				AA1AC4A71CC8B2B700BA7B88 /* face45.png in Resources */,
 				AA1AC3FF1CC8B2B700BA7B88 /* btn_play_b@2x.png in Resources */,
@@ -8358,7 +8289,6 @@
 				AA1AC42A1CC8B2B700BA7B88 /* btn_webview_refresh@2x.png in Resources */,
 				AA1AC4A91CC8B2B700BA7B88 /* face46.png in Resources */,
 				AA1AC4981CC8B2B700BA7B88 /* face38@2x.png in Resources */,
-				AA1AC34F1CC8B2B700BA7B88 /* AppIcon60x60@2x.png in Resources */,
 				AA1AC9131CC8B2B700BA7B88 /* template007-1@2x.jpg in Resources */,
 				AA1AC3761CC8B2B700BA7B88 /* bg_popover@3x.png in Resources */,
 				E99A525A1D0EE97F00E21F67 /* AppIcon29x29@3x.png in Resources */,
@@ -8456,7 +8386,6 @@
 				AA1ACA021CC8B2B700BA7B88 /* xborder_xueye_a@2x.jpg in Resources */,
 				AA1AC58A1CC8B2B700BA7B88 /* filter_still_175@2x.jpg in Resources */,
 				AA1AC4AF1CC8B2B700BA7B88 /* face49.png in Resources */,
-				AA1AC35E1CC8B2B700BA7B88 /* bg_camera_setting.png in Resources */,
 				E99A54131D0EE97F00E21F67 /* icon_fillinlight_a@3x.png in Resources */,
 				AA1AC8EE1CC8B2B700BA7B88 /* template005-4@3x.jpg in Resources */,
 				AA1AC3D11CC8B2B700BA7B88 /* btn_camera_takephoto@2x.png in Resources */,
@@ -8598,7 +8527,6 @@
 				AA1AC8F31CC8B2B700BA7B88 /* template005-7@2x.jpg in Resources */,
 				E99A52E01D0EE97F00E21F67 /* left_arrow@2x.png in Resources */,
 				E99A52C51D0EE97F00E21F67 /* icon_home_camera@3x.png in Resources */,
-				AAA363A61CC8C4150010D876 /* Info.plist in Resources */,
 				AA1AC4971CC8B2B700BA7B88 /* face38.png in Resources */,
 				AA1AC7391CC8B2B700BA7B88 /* icon_mosaic_brush_b@3x.png in Resources */,
 				AA1AC5031CC8B2B700BA7B88 /* face87.png in Resources */,
@@ -8658,7 +8586,6 @@
 				AA1AC8A31CC8B2B700BA7B88 /* template002-2@2x.jpg in Resources */,
 				AA1AC3D01CC8B2B700BA7B88 /* btn_camera_ok_b@3x.png in Resources */,
 				E99A527E1D0EE97F00E21F67 /* hefeSoftLight.png in Resources */,
-				AA1AC34B1CC8B2B700BA7B88 /* AppIcon40x40@2x.png in Resources */,
 				AA1AC6641CC8B2B700BA7B88 /* icon_clipScale11_b@2x.png in Resources */,
 				E99A52E11D0EE97F00E21F67 /* left_arrow@3x.png in Resources */,
 				E99A52FC1D0EE97F00E21F67 /* icon_blur_star@3x.png in Resources */,
@@ -8837,7 +8764,6 @@
 				AA1AC90E1CC8B2B700BA7B88 /* template006-9@3x.jpg in Resources */,
 				AA1AC8151CC8B2B700BA7B88 /* thumbnail@2x.jpg in Resources */,
 				AA1AC4111CC8B2B700BA7B88 /* btn_round_blueBG_a@3x.png in Resources */,
-				AA1AC34E1CC8B2B700BA7B88 /* AppIcon57x57@2x.png in Resources */,
 				AA1AC7EB1CC8B2B700BA7B88 /* mosaic_style_4@2x.jpg in Resources */,
 				AA1AC9FB1CC8B2B700BA7B88 /* xborder_aixin_a@3x.jpg in Resources */,
 				AA1AC8A21CC8B2B700BA7B88 /* template002-1@3x.jpg in Resources */,
@@ -8880,7 +8806,6 @@
 				E99A52DA1D0EE97F00E21F67 /* item_bg_purple_a@2x.png in Resources */,
 				AA1AC8531CC8B2B700BA7B88 /* PzlBorder30@3x.png in Resources */,
 				AA1AC6341CC8B2B700BA7B88 /* icon_btn_textfont_a@2x.png in Resources */,
-				AA1AC3501CC8B2B700BA7B88 /* AppIcon60x60@3x.png in Resources */,
 				E99A533C1D0EE97F00E21F67 /* btn_flip_leftright_a@3x.png in Resources */,
 				AA1AC4541CC8B2B700BA7B88 /* cosmesis_help_remove@2x.png in Resources */,
 				AA1AC6F61CC8B2B700BA7B88 /* icon_function_text_b@2x.png in Resources */,
@@ -8974,7 +8899,6 @@
 				AA1AC5531CC8B2B700BA7B88 /* filter_meirong_baixi@3x.jpg in Resources */,
 				AA1AC3D91CC8B2B700BA7B88 /* btn_clip_horizen@3x.png in Resources */,
 				AA1AC6221CC8B2B700BA7B88 /* icon_blur_star@2x.png in Resources */,
-				AA1AC3561CC8B2B700BA7B88 /* assets_no_wifi@3x.png in Resources */,
 				AA1AC6D31CC8B2B700BA7B88 /* icon_fillinlight_b@3x.png in Resources */,
 				E99A526A1D0EE97F00E21F67 /* btn_home_setting_a@2x.png in Resources */,
 				AA1AC48D1CC8B2B700BA7B88 /* face33.png in Resources */,
@@ -9073,7 +8997,6 @@
 				AA1AC5721CC8B2B700BA7B88 /* filter_scenery_115@2x.jpg in Resources */,
 				AA1AC8161CC8B2B700BA7B88 /* thumbnail@3x.jpg in Resources */,
 				AA1AC3EF1CC8B2B700BA7B88 /* btn_flip_leftright_b@3x.png in Resources */,
-				AA1AC3521CC8B2B700BA7B88 /* arrow1_normal@3x.png in Resources */,
 				AA1AC8A01CC8B2B700BA7B88 /* slider_tip_white_bg@3x.png in Resources */,
 				AA1AC93A1CC8B2B700BA7B88 /* template009-1@3x.jpg in Resources */,
 				AA1AC9D31CC8B2B700BA7B88 /* 19.png in Resources */,
@@ -9111,7 +9034,6 @@
 				E99A530F1D0EE97F00E21F67 /* border_simple_18@2x.jpg in Resources */,
 				AA1AC4DF1CC8B2B700BA7B88 /* face70.png in Resources */,
 				E99A530E1D0EE97F00E21F67 /* border_simple_17@3x.jpg in Resources */,
-				AA1AC3541CC8B2B700BA7B88 /* assets_blank_icon_110@3x.png in Resources */,
 				E99A53651D0EE97F00E21F67 /* icon_edit_clip_a@2x.png in Resources */,
 				E99A53481D0EE97F00E21F67 /* icon_clip_confim@3x.png in Resources */,
 				E99A529A1D0EE97F00E21F67 /* home_block_blue_b@3x.png in Resources */,
@@ -9305,7 +9227,6 @@
 				AA1AC6261CC8B2B700BA7B88 /* icon_brightness_b@2x.png in Resources */,
 				AA1AC80A1CC8B2B700BA7B88 /* thumbnail@3x.jpg in Resources */,
 				AA1AC97E1CC8B2B700BA7B88 /* text_font_thumbnail21@3x.png in Resources */,
-				AA1AC35C1CC8B2B700BA7B88 /* bg_blur@2x.png in Resources */,
 				AA1AC7D11CC8B2B700BA7B88 /* mini_icon_weixin@3x.png in Resources */,
 				E99A53721D0EE97F00E21F67 /* PEPhotoCropEditorBorder@2x.png in Resources */,
 				AA1AC82B1CC8B2B700BA7B88 /* poster_15@3x.jpg in Resources */,
@@ -9466,7 +9387,6 @@
 				AA1AC6DD1CC8B2B700BA7B88 /* icon_function_border_a@3x.png in Resources */,
 				E99A533B1D0EE97F00E21F67 /* btn_flip_leftright_a@2x.png in Resources */,
 				AA1AC69A1CC8B2B700BA7B88 /* icon_cosmesis_finshing_a@2x.png in Resources */,
-				AA1AC35A1CC8B2B700BA7B88 /* bg_blueTooth_scanSign@2x.png in Resources */,
 				AA1AC80D1CC8B2B700BA7B88 /* thumbnail@2x.jpg in Resources */,
 				AA1AC9A81CC8B2B700BA7B88 /* text_font_thumbnail6@3x.png in Resources */,
 				AA1AC3C21CC8B2B700BA7B88 /* btn_blueTooth_help_a@3x.png in Resources */,
@@ -9484,7 +9404,6 @@
 				AA1AC6FA1CC8B2B700BA7B88 /* icon_hightLight_a@2x.png in Resources */,
 				AA1AC85F1CC8B2B700BA7B88 /* PzlImageBackground15@3x.jpg in Resources */,
 				AA1AC4321CC8B2B700BA7B88 /* camera_flash_auto_b@2x.png in Resources */,
-				AA1AC35B1CC8B2B700BA7B88 /* bg_blueTooth_scanSign@3x.png in Resources */,
 				AA1AC58F1CC8B2B700BA7B88 /* filter_still_177@3x.jpg in Resources */,
 				E99A534E1D0EE97F00E21F67 /* icon_clipScale169_a@3x.png in Resources */,
 				AA1AC3471CC8B2B700BA7B88 /* aixin.jpg in Resources */,
@@ -9667,7 +9586,6 @@
 				E99A53141D0EE97F00E21F67 /* pb10@3x.png in Resources */,
 				AA1AC4F31CC8B2B700BA7B88 /* face7@2x.png in Resources */,
 				AA1AC8901CC8B2B700BA7B88 /* setting_openAuthoried_AccessAlbum_ios7@3x.png in Resources */,
-				AA1AC3571CC8B2B700BA7B88 /* assets_preview_mask@2x.png in Resources */,
 				AA1AC45C1CC8B2B700BA7B88 /* face10@2x.png in Resources */,
 				E99A528A1D0EE97F00E21F67 /* sutroCurves.png in Resources */,
 				AA1AC5451CC8B2B700BA7B88 /* filter_figure_126@3x.jpg in Resources */,
@@ -9723,7 +9641,6 @@
 				AA1AC6A61CC8B2B700BA7B88 /* icon_cosmesis_remove_a@2x.png in Resources */,
 				E99A540A1D0EE97F00E21F67 /* icon_colourTemperature_a@2x.png in Resources */,
 				E99A52AA1D0EE97F00E21F67 /* home_block_red_a@2x.png in Resources */,
-				AA1AC34D1CC8B2B700BA7B88 /* AppIcon57x57.png in Resources */,
 				AA1AC67D1CC8B2B700BA7B88 /* icon_clipScaleAny_b@3x.png in Resources */,
 				AA1AC4E11CC8B2B700BA7B88 /* face71.png in Resources */,
 				AA1AC3BE1CC8B2B700BA7B88 /* btn_blueTooth_connect_b@3x.png in Resources */,
@@ -9733,7 +9650,6 @@
 				AA1AC8CC1CC8B2B700BA7B88 /* template004-11@3x.jpg in Resources */,
 				AA1AC38A1CC8B2B700BA7B88 /* border_baolilai_a@3x.jpg in Resources */,
 				AA1AC3E31CC8B2B700BA7B88 /* btn_download_light_blue@3x.png in Resources */,
-				AA1AC34C1CC8B2B700BA7B88 /* AppIcon40x40@3x.png in Resources */,
 				AA1ACA061CC8B2B700BA7B88 /* xingmang.jpg in Resources */,
 				AA1AC6711CC8B2B700BA7B88 /* icon_clipScale32_b@3x.png in Resources */,
 				AA1AC6E51CC8B2B700BA7B88 /* icon_function_edit_a@3x.png in Resources */,
@@ -9758,14 +9674,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		54EFC363EDFCBCA36EA71915 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		591A323BBADBE0F9D84887A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M_TShowShow/Pods-M_TShowShow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF0D5A684BD6AF3C3779485A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-M_TShowShow/Pods-M_TShowShow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AA1ABC071CC8B20B00BA7B88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAA363AE1CC8C4150010D876 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				AA1ACA171CC8B54C00BA7B88 /* JHMainViewController.m in Sources */,
-				AAA363AC1CC8C4150010D876 /* MASViewConstraint.m in Sources */,
 				E9AE30101D103AC600E76DCF /* JHImageManager.m in Sources */,
 				AA1ABC131CC8B20B00BA7B88 /* AppDelegate.m in Sources */,
 				AA1ACA141CC8B36D00BA7B88 /* JHBaseViewController.m in Sources */,
@@ -9775,24 +9737,16 @@
 				AA6014D81CDC8FA70065EBF1 /* JHAlumShowCell.m in Sources */,
 				AA1ABC1C1CC8B20C00BA7B88 /* M_TShowShow.xcdatamodeld in Sources */,
 				AA11DE201CC9F45A00279F1E /* JHCustomerMainButton.m in Sources */,
-				AAA363AF1CC8C4150010D876 /* View+MASAdditions.m in Sources */,
 				AA441C441CE1B2490056993D /* JHPhotoShowCell.m in Sources */,
 				AA6014DC1CDC9F0F0065EBF1 /* JHAlumPhotoShowController.m in Sources */,
 				AA2CC5E71CE0660000B1551A /* JHBeautifyPhotoController.m in Sources */,
-				AAA363A71CC8C4150010D876 /* MASCompositeConstraint.m in Sources */,
-				AAA363AB1CC8C4150010D876 /* MASViewAttribute.m in Sources */,
 				AA2CC5EA1CE06B2700B1551A /* JHShowPhotoController.m in Sources */,
 				E99A54401D0EEA8100E21F67 /* CJCustomeButtonForDark.m in Sources */,
 				AA11DE271CCA197500279F1E /* JHAlbumSelectController.m in Sources */,
 				AA441C401CE1A9AB0056993D /* JHPhotoModel.m in Sources */,
 				AA2CC5E11CE057FF00B1551A /* PhotoCollectionItem.m in Sources */,
-				AAA363A91CC8C4150010D876 /* MASConstraintMaker.m in Sources */,
-				AAA363AD1CC8C4150010D876 /* NSArray+MASAdditions.m in Sources */,
 				E9AE300A1D102F6500E76DCF /* JHIntelligentBeautifyVC.m in Sources */,
-				AAA363B01CC8C4150010D876 /* ViewController+MASAdditions.m in Sources */,
-				AAA363A81CC8C4150010D876 /* MASConstraint.m in Sources */,
 				E9372D7C1D45B2A60045045C /* JHSepecialEffectVC.m in Sources */,
-				AAA363AA1CC8C4150010D876 /* MASLayoutConstraint.m in Sources */,
 				AA1ABC101CC8B20B00BA7B88 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -9932,9 +9886,11 @@
 		};
 		AA1ABC3C1CC8B20C00BA7B88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CEB596DAFB8E2BBBA959513 /* Pods-M_TShowShow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = HRJA43XU8W;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/M_TShowShow/Others/M_TShowShow_PCH.pch";
 				INFOPLIST_FILE = M_TShowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -9946,9 +9902,11 @@
 		};
 		AA1ABC3D1CC8B20C00BA7B88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00167C18581E5C7B9ED17CC /* Pods-M_TShowShow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				DEVELOPMENT_TEAM = HRJA43XU8W;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/M_TShowShow/Others/M_TShowShow_PCH.pch";
 				INFOPLIST_FILE = M_TShowShow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

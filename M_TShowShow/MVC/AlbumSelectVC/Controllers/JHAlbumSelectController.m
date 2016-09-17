@@ -30,9 +30,17 @@
     _tableView.dataSource = self;
     _tableView.delegate = self;
     _tableView.separatorColor = [UIColor blackColor];
-
+        [self.view addSubview:_tableView];
+    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.top.mas_equalTo(64);
+        make.left.mas_equalTo(0);
+        make.right.mas_equalTo(0);
+        make.bottom.mas_equalTo(@[self.view]);
+        
+    }];
     _tableView.backgroundColor = [UIColor blackColor];
-    [self.view addSubview:_tableView];
+
    
 }
 

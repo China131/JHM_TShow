@@ -198,8 +198,10 @@
        
         make.top.mas_equalTo(self.view);
         make.left.equalTo(self.view.mas_left).with.offset(0);
-        make.width.mas_equalTo(k_SCREEN_WIDTH);
-        make.height.mas_equalTo(k_SCREEN_HEIGHT);
+//        make.width.mas_equalTo(k_SCREEN_WIDTH);
+//        make.height.mas_equalTo(k_SCREEN_HEIGHT);
+        make.right.equalTo(self.view);
+        make.bottom.equalTo(self.view);
     }];
     
     
@@ -217,8 +219,8 @@
        
         make.top.equalTo(logoImg.mas_bottom).with.offset(10);
         make.bottom.equalTo(self.view.mas_bottom).with.offset(-100);
-        make.width.mas_equalTo(k_SCREEN_WIDTH);
-        make.height.mas_equalTo( 158.0/500*200);
+        make.width.mas_equalTo(self.view);
+//        make.height.mas_equalTo( 158.0/500*200);
     }];
     
    
@@ -276,9 +278,14 @@
     
 }
 
+-(BOOL)shouldAutorotate{
+    return NO;
+}
 
-
-
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    
+    return UIInterfaceOrientationMaskPortrait;
+}
 
 
 

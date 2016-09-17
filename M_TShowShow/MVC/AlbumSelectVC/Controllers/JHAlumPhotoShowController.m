@@ -81,16 +81,16 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+    __weak typeof(self) weakSelf = self;
     PhotoCollectionItem *items = [collectionView dequeueReusableCellWithReuseIdentifier:@"photositems" forIndexPath:indexPath];
     items.collection = _photoAssetArr[indexPath.row];
     items.tag = indexPath.row;
     items.scalue = ^(NSInteger selectAsset){
       
         JHShowPhotoController *show = [JHShowPhotoController new];
-        show.assetDataArr = _photoAssetArr;
+        show.assetDataArr = weakSelf.photoAssetArr;
         show.currentIndex = selectAsset;
-        [self.navigationController pushViewController:show animated:YES];
+        [weakSelf.navigationController pushViewController:show animated:YES];
         
     };
     return items;
@@ -102,9 +102,29 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     
     
+//    PHAsset *asset = _photoAssetArr[indexPath.row];
+//    
+//    [[PHImageManager defaultManager] requestImageDataForAsset:asset options:[PHImageRequestOptions new] resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
+//        CFDataRef ref = (__bridge CFDataRef)imageData;
+//        CGImageSourceRef imagRef = CGImageSourceCreateWithData(ref, NULL);
+//        NSDictionary *dic = (__bridge NSDictionary *)CGImageSourceCopyPropertiesAtIndex(imagRef, 0, NULL);
+//        NSLog(@"%@",dic);
+//        
+//    }];
+//    
+//    
+//    return;
+    
     JHBeautifyPhotoController *beautify = [JHBeautifyPhotoController new];
     beautify.currentAsset = _photoAssetArr[indexPath.row];
     [self.navigationController pushViewController:beautify animated:YES];
+    
+    
+}
+
+
+-(void)dealloc{
+    
     
     
 }

@@ -35,13 +35,13 @@
 
 #pragma mark---------------------------------------->初始化基本视图
 - (void)configBaseImgView{
-    
+    __weak typeof(self) weakSelf = self;
     /*        初始化美化的图片         */
     _currentImgView = [[UIImageView alloc] init];
     
     [[PHImageManager defaultManager] requestImageForAsset:_currentAsset targetSize:CGSizeMake(k_SCREEN_WIDTH,((CGFloat)_currentAsset.pixelHeight)/_currentAsset.pixelWidth*k_SCREEN_WIDTH) contentMode:PHImageContentModeDefault options:[PHImageRequestOptions new] resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-        _currentImgView.contentMode = UIViewContentModeScaleAspectFit;
-        _currentImgView.image = result;
+        weakSelf.currentImgView.contentMode = UIViewContentModeScaleAspectFit;
+        weakSelf.currentImgView.image = result;
         
     }];
 
@@ -49,8 +49,8 @@
     
     [_currentImgView mas_makeConstraints:^(MASConstraintMaker *make) {
         
-        make.top.equalTo(self.view.mas_top).with.offset(0);
-        make.left.equalTo(self.view.mas_left).with.offset(0);
+        make.top.equalTo(weakSelf.view.mas_top).with.offset(0);
+        make.left.equalTo(weakSelf.view.mas_left).with.offset(0);
         make.width.mas_equalTo(k_SCREEN_WIDTH);
         make.height.mas_equalTo(k_SCREEN_HEIGHT-64);
     }];
@@ -79,8 +79,8 @@
     scrollView.contentSize = CGSizeMake(spa+(spa+itemsWid)*(textArr.count-1), 0);
     [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.bottom.equalTo(self.view.mas_bottom).with.offset(0);
-        make.left.equalTo(self.view.mas_left).with.offset(0);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).with.offset(0);
+        make.left.equalTo(weakSelf.view.mas_left).with.offset(0);
         make.width.mas_equalTo(k_SCREEN_WIDTH-60);
         make.height.mas_equalTo(50);
         
@@ -119,8 +119,8 @@
     
     [btns mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.bottom.equalTo(self.view.mas_bottom);
-        make.right.equalTo(self.view.mas_right);
+        make.bottom.equalTo(weakSelf.view.mas_bottom);
+        make.right.equalTo(weakSelf.view.mas_right);
         make.width.mas_equalTo(45);
         make.height.mas_equalTo(50);
         
@@ -133,8 +133,8 @@
     
     [lineV mas_makeConstraints:^(MASConstraintMaker *make) {
        
-        make.bottom.equalTo(self.view.mas_bottom).with.offset(3);
-        make.right.equalTo(self.view.mas_right).with.offset(57);
+        make.bottom.equalTo(weakSelf.view.mas_bottom).with.offset(3);
+        make.right.equalTo(weakSelf.view.mas_right).with.offset(57);
         make.width.mas_equalTo(20);
         make.height.mas_equalTo(50);
         
@@ -164,6 +164,9 @@
 }
 
 
-
+-(void)dealloc{
+    
+    
+}
 
 @end

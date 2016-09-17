@@ -47,6 +47,7 @@
        
         _showImgView.contentMode = UIViewContentModeScaleToFill;
         _showImgView.image = result;
+        NSLog(@"%@",_showImgView.image.observationInfo);
         
     }];
     [_currentScrollView setZoomScale:1.0];

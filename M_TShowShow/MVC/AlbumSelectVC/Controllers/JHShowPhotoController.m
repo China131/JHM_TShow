@@ -131,6 +131,9 @@
     [self updateTheCurrentIndex];
 }
 
-
+-(void)dealloc{
+    
+    
+}
 
 @end

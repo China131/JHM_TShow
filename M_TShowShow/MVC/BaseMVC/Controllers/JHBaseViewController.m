@@ -7,7 +7,7 @@
 //
 
 #import "JHBaseViewController.h"
-
+#import <objc/runtime.h>
 @interface JHBaseViewController ()
 
 @end
@@ -19,6 +19,14 @@
     self.navigationController.navigationBar.barTintColor = [UIColor blackColor];
     self.view.backgroundColor = [UIColor blackColor];
     self.automaticallyAdjustsScrollViewInsets = NO;
+    Method selfMtihod = class_getInstanceMethod([self class], @selector(shouldAutorotate));
+    Method navr = class_getInstanceMethod([self.navigationController class], @selector(shouldAutorotate));
+    method_exchangeImplementations(selfMtihod, navr);
+    
+    
+    Method selfOrientation = class_getInstanceMethod([self class], @selector(supportedInterfaceOrientations));
+    Method navrOrientation = class_getInstanceMethod([self.navigationController class], @selector(supportedInterfaceOrientations));
+    method_exchangeImplementations(selfOrientation, navrOrientation);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,6 +34,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(BOOL)shouldAutorotate{
+    return YES;
+}
+
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
 
 - (void)backToMainScreen{
     
@@ -42,7 +58,7 @@
     btn.frame = CGRectMake(0, 0, 50, 25);
     
     [btn setImage:[UIImage imageNamed:@"icon_btn_home_a"] forState:UIControlStateNormal];
-    
+
     [btn setTitle:@"首页" forState:UIControlStateNormal];
     [btn setImageEdgeInsets:UIEdgeInsetsMake(0, -10, 0, 0)];
     [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 0)];
@@ -107,10 +123,9 @@
     [btn setTitleEdgeInsets:UIEdgeInsetsMake(0, -5, 0, 0)];
     btn.titleLabel.textAlignment = NSTextAlignmentLeft;
     btn.titleLabel.font = [UIFont systemFontOfSize:12];
-     [btn addTarget:self action:@selector(backToMainScreen) forControlEvents:UIControlEventTouchUpInside];
+    [btn addTarget:self action:@selector(backToMainScreen) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    
-    
+
 }
 
 
@@ -118,6 +133,13 @@
     
     [self.navigationController setNavigationBarHidden:YES animated:animation];
     
+    
+}
+
+
+-(void)dealloc{
+    
+    NSLog(@"%p",__func__);
     
 }
 
